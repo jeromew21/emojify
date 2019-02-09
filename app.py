@@ -5,11 +5,11 @@ import emojify
 @application.route('/')
 def viewScores():
     return """
-    <html>
-        <head></head>
+    <!doctype html>
+        <head><title>Make ur text emoji</title></head>
         <body>
         <form action="api" method="post">
-        <textarea width="1000" height="2000" name="text" placeholder="Type something here"></textarea>
+        <textarea style="width:1000; height:800" name="text" placeholder="Type something here"></textarea>
         <button type="submit">Emojify</button>
         </form>
         </body>
