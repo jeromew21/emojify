@@ -9,7 +9,7 @@ def viewScores():
         <head><title>Make ur text emoji</title></head>
         <body>
         <form action="api" method="post">
-        <textarea style="width:1000; height:800" name="text" placeholder="Type something here"></textarea>
+        <textarea style="width: 1000px; height: 800px;" name="text" placeholder="Type something here"></textarea>
         <button type="submit">Emojify</button>
         </form>
         </body>
