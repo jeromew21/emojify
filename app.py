@@ -1,5 +1,5 @@
 from flask import Flask, request
-app = Flask(__name__)
+application = Flask(__name__)
 import emojify
 
 @app.route('/create')
