@@ -2,7 +2,7 @@ from flask import Flask, request
 application = Flask(__name__)
 import emojify
 
-@app.route('/create')
+@application.route('/create')
 def viewScores():
     return """
     <html>
@@ -16,7 +16,7 @@ def viewScores():
         </html>
 """
 
-@app.route('/api', methods=['POST'])
+@application.route('/api', methods=['POST'])
 def submitScore():
     text = request.form.get('text')
     return emojify.emojify(text)
